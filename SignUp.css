@@ -3,8 +3,8 @@ body {font-family: Arial, sans-serif; margin: 0; padding: 0;}
 .navbar img {height: 50px;}
 .navbar .search-bar {flex: 1; margin: 0 20px;}
 .navbar .search-bar input {width: 100%; padding: 5px;}
-.navbar a {color: white; text-decoration: none; margin-left: 20px; padding: 10px 15px; border-radius: 5px;}
-.navbar a:hover {background-color: #1A2130;}
+.navbar a {color: #FDFFE2; opacity: 0.5; transition: 0.3s ease; text-decoration: none; margin: 0 5px;}
+.navbar a:hover {opacity: 1; color: #FDFFE2;}
 body {display: flex; flex-direction: column; min-height: 100vh; margin: 0; background-color: #FDFFE2;}
 .navbar {display: flex; align-items: center; justify-content: space-between; background-color: #1A2130; padding: 10px 20px;}
 .navbar img {height: 50px;}
