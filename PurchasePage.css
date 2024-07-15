@@ -68,12 +68,22 @@ body {
 
 .product-list .card {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.product-list .card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.product-list .card-title,
+.product-list .card-text {
+    font-size: 14px;
+}
+
 .payment-method .form-check {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .address-arrival .form-label {
@@ -81,7 +91,7 @@ body {
 }
 
 .address-arrival .form-control {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .footer {
