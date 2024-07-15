@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - ICT Ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="ProductPage.js"></script> <!-- Include your JavaScript file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="ProductPage.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo">
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+    </nav>
+
+    <div class="banner">
+        <img src="c:\Users\Asus\Downloads\banner.jpg" alt="Banner Image" class="img-fluid">
+    </div>
+
+    <main class="container-fluid product-detail">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="thumbnail-images">
+                    <img src="c:\Users\Asus\Downloads\shirt_f.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="c:\Users\Asus\Downloads\shirt_b.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="c:\Users\Asus\Downloads\shirt_logo.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="c:\Users\Asus\Downloads\shirt_full.jpg" alt="Thumbnail 4" class="thumbnail" onclick="changeProductImage(this)">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-image">
+                    <img id="mainProductImage" src="c:\Users\Asus\Downloads\shirt_full.jpg" alt="Product Image" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-info">
+                    <h2 class="product-title">Shirt 1</h2>
+                    <p class="product-price">$19.99</p>
+                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida consequat dolor, non imperdiet nisl convallis at. Fusce tincidunt euismod dui, nec sodales magna.</p>
+                </div>
+                <div class="address-box">
+                    <h3>Shipping Address</h3>
+                    <form>
+                        <textarea placeholder="Enter your address"></textarea>
+                    </form>
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Browse Items</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">&copy; Cozy Shark 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
