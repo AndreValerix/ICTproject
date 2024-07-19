@@ -13,48 +13,50 @@
     <link href="ProductPage.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top fixed-top">
         <img src="logo.png" alt="Logo">
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
+        <div class="search-bar ">
+            <div>
+                <input type="text" placeholder="Search...">
+            </div>
         </div>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+        <a href="MainPage.html">Home</a>
+        <a href="SearchPage.html" class="active">Products</a>
+        <a href="PurchasePage.html">Cart</a>
         <a href="login.html">Login</a>
-    </nav>
+    </nav> 
 
-    <div class="banner">
-        <img src="c:\Users\Asus\Downloads\banner.jpg" alt="Banner Image" class="img-fluid">
-    </div>
-
-    <main class="container-fluid product-detail">
+    <main class="container-fluid main_sec my-5">
         <div class="row">
             <div class="col-md-3">
                 <div class="thumbnail-images">
-                    <img src="c:\Users\Asus\Downloads\shirt_f.jpg" alt="Thumbnail 1" class="thumbnail" onclick="changeProductImage(this)">
-                    <img src="c:\Users\Asus\Downloads\shirt_b.jpg" alt="Thumbnail 2" class="thumbnail" onclick="changeProductImage(this)">
-                    <img src="c:\Users\Asus\Downloads\shirt_logo.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeProductImage(this)">
-                    <img src="c:\Users\Asus\Downloads\shirt_full.jpg" alt="Thumbnail 4" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="image/1.png" alt="Thumbnail 1" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="image/2.png" alt="Thumbnail 2" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="" alt="Thumbnail 3" class="thumbnail" onclick="changeProductImage(this)">
+                    <img src="" alt="Thumbnail 4" class="thumbnail" onclick="changeProductImage(this)">
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <div class="product-image">
-                    <img id="mainProductImage" src="c:\Users\Asus\Downloads\shirt_full.jpg" alt="Product Image" class="img-fluid">
+                    <img id="mainProductImage" src="image/1.png" alt="Product Image" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-5">
                 <div class="product-info">
-                    <h2 class="product-title">Shirt 1</h2>
-                    <p class="product-price">$19.99</p>
-                    <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida consequat dolor, non imperdiet nisl convallis at. Fusce tincidunt euismod dui, nec sodales magna.</p>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt 1</h5>
+                            <p class="card-price">$19.99</p>
+                            <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida consequat dolor, non imperdiet nisl convallis at. Fusce tincidunt euismod dui, nec sodales magna.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="address-box">
+                <div class="address-box mt-4">
                     <h3>Shipping Address</h3>
                     <form>
                         <textarea placeholder="Enter your address"></textarea>
                     </form>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-primary mt-2">Add to Cart</a>
                 </div>
             </div>
         </div>
@@ -67,12 +69,12 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-discord"></i></a>
             <ul class="list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Browse Items</a></li>
+                <li><a href="MainPage.html">Home</a></li>
+                <li><a href="SearchPage.html">Browse Items</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">&copy; Cozy Shark 2024</p>
+            <p class="copyright" style="font-size: x-small; opacity: 0.5; color: #FDFFE2;">Cozy Shark @ 2024</p>
         </div>
     </footer>
 </body>

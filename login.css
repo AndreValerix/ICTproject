@@ -9,6 +9,12 @@ body {
     margin: 0; 
     background-color: #FDFFE2;
 }
+
+.navbar a.active {
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+}
+
 .navbar {display: flex; align-items: center; justify-content: space-between; background-color: #1A2130; padding: 10px 20px;}
 .navbar img {height: 50px;}
 .navbar .search-bar {

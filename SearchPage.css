@@ -1,21 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&family=Playwrite+CZ:wght@100..400&display=swap');
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FDFFE2;
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0;
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin: 0; 
+  background-color: #FDFFE2;
 }
-
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1A2130;
-    padding: 10px 20px;
-}
-
-.navbar img {
-    height: 50px;
-}
+.navbar {display: flex; align-items: center; justify-content: space-between; background-color: #1A2130; padding: 10px 20px;}
+.navbar img {height: 50px;}
 
 .navbar .search-bar {
     flex: 1;
@@ -25,7 +21,7 @@ body {
 .navbar .search-bar input {
     width: 100%;
     padding: 5px 15px;
-    border: 1px solid #ddd;
+    border: 1px;
     background-color: white;
     border-radius: 24px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -43,38 +39,66 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border-color: #FDFFE2;
 }
-
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 .navbar a {
-    color: #FDFFE2;
-    opacity: 0.5;
-    transition: 0.3s ease;
-    text-decoration: none;
-    margin: 0 5px;
+  color: #FDFFE2; 
+  opacity: 0.5; 
+  transition: 0.3s ease; 
+  text-decoration: none; margin: 0 5px;
+}
+.navbar a:hover {
+  opacity: 1; color: #FDFFE2;
 }
 
-.navbar a:hover {
-    opacity: 1;
-    color: #FDFFE2;
-}
+/*.navbar .search-bar input {width: 100%; padding: 5px;}*/
+.navbar a {color: white; text-decoration: none; margin-left: 20px; padding: 10px 15px; border-radius: 5px;}
+.navbar a:hover {background-color: #1A2130;}
+.content {flex: 1;}
+.footer {height: 120px; background-color: #1A2130;}
+
+.footer {text-align: center; padding: 20px; background-color: #1A2130; background-size: cover;}
+.footer a {color: #FDFFE2; opacity: 0.5; transition: 0.3s ease; text-decoration: none; margin: 0 5px;}
+.footer a:hover {opacity: 1; color: #FDFFE2;}
+
+.list {list-style: none; padding-top: 10px;}
+.list li {display: inline-block; margin: 0 10px;}
+.list li a {text-decoration: none;}
 
 .navbar a.active {
     border-bottom: 2px solid white;
     border-radius: 0px;
 }
 
-.container-fluid {
-    display: flex;
-    padding: 20px;
+main {
+    flex: 1;
+}
+.main_sec{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    font-family:"Montserrat", sans-serif; 
 }
 
-.filter-sidebar {
-    background-color: #ffffff;
+.side-scroller-box {
+    background-color: white;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin-bottom: 20px;
-    overflow-y: auto; /* Add this line */
-    max-height: calc(100vh - 200px); /* Optional: Set max-height for better control */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    overflow-y: scroll;
+    /*white-space: nowrap;*/
+    height: calc(160vh - 200px); /* Adjust this value as needed */
+}
+
+.side-scroller {
+    /*display: flex;*/
+    /*flex-wrap: nowrap;*/
+    overflow-x: auto;
+    scrollbar-width: thin;
 }
 
 .filter-sidebar h5 {
@@ -102,58 +126,17 @@ body {
     margin-right: 10px;
 }
 
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #1A2130;
-    color: #FDFFE2;
+/************ main products ******************/
+.card-title{
+  font-weight: 500 ;
 }
 
-.footer a {
-    color: #FDFFE2;
+.btn-gosomewhere{
+  background: #1A2130;
+  color: white;
+  transition: background-color 0.2s ease;
 }
-
-.footer a {
-    color: #FDFFE2;
-    opacity: 0.5;
-    transition: 0.3s ease;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer a:hover {
-    opacity: 1;
-}
-
-.footer .social a {
-    margin: 0 10px;
-}
-
-.footer .social a i {
-    font-size: 24px;
-}
-
-.footer .list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-.footer .list li {
-    margin: 0 10px;
-}
-
-.footer .list li a {
-    color: #FDFFE2;
-    text-decoration: none;
-}
-
-.footer .list li a:hover {
-    text-decoration: underline;
-}
-
-.footer p {
-    margin: 0;
+.btn-gosomewhere:hover{
+  background: #3c5e9e;
+  color: white;
 }

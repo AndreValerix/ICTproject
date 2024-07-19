@@ -12,52 +12,61 @@
     <link href="PurchasePage.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar fixed-top">
         <img src="logo.png" alt="Logo">
         <div class="search-bar">
             <input type="text" placeholder="Search...">
         </div>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="cart.html">Cart</a>
+        <a href="MainPage.html">Home</a>
+        <a href="SearchPage.html">Products</a>
+        <a href="#self"class="active">Cart</a>
         <a href="login.html">Login</a>
     </nav>
 
-    <main class="container-fluid">
+    <main class="container-fluid main_sec my-5">
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <h2>Product List</h2>
+                <h2>Product List</h2><br>
                 <div class="product-list">
-                    <div class="card mb-3">
-                        <img src="shirt1.jpg" class="card-img-top" alt="Shirt 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Shirt 1</h5>
-                            <p class="card-text">$19.99</p>
+                    <div class="row">
+                        <div class="cart mb-3">
+                            <div class="card" style="width: 30rem; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                <img src="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shirt 1</h5>
+                                    <p class="card-text">price : $19.99</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card mb-3">
-                        <img src="shirt2.jpg" class="card-img-top" alt="Shirt 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Shirt 2</h5>
-                            <p class="card-text">$29.99</p>
+    
+                        <div class="cart mb-3">
+                            <div class="card" style="width: 30rem; padding: 15px;box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                <img src="" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shirt 2</h5>
+                                    <p class="card-text">price : $19.99</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </div>    
+
                 </div>
             </div>
             <div class="col-md-5">
-                <h2>Payment Method</h2>
+                <h2>Payment Method</h2><br>
                 <div class="payment-method">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="creditCard">
-                        <label class="form-check-label" for="creditCard">Credit Card</label>
+                        <label class="form-check-label" for="creditCard">Credit Card</label> <span class="ms-3"><img src="image/creditcard.png" class="img-fluid" style="width: 90px; height: auto;" alt=""></span>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal">
-                        <label class="form-check-label" for="paypal">PayPal</label>
+                        <label class="form-check-label" for="paypal">PayPal</label><span class="ms-3"><img src="image/paypal.png" class="img-fluid" style="width: 90px; height: auto;" alt=""></span>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="paymentMethod" id="bankTransfer" value="bankTransfer">
-                        <label class="form-check-label" for="bankTransfer">Bank Transfer</label>
+                        <label class="form-check-label" for="bankTransfer">Bank Transfer</label><span class="ms-3"><img src="image/yoma.png" class="img-fluid" style="width: 30px; height: auto;" alt=""></span>
+                        <span class="ms-2"><img src="image/kbz.png" class="img-fluid" style="width: 45px; height: auto;" alt=""></span>
                     </div>
                 </div>
             </div>
@@ -65,7 +74,7 @@
 
         <div class="row justify-content-center mt-4">
             <div class="col-md-10">
-                <h2>Address & Arrival Time</h2>
+                <h2>Address & Arrival Time</h2><br>
                 <div class="address-arrival">
                     <div class="mb-3">
                         <label for="address" class="form-label">Address</label>
@@ -75,7 +84,7 @@
                         <label for="arrivalTime" class="form-label">Arrival Time</label>
                         <input type="text" class="form-control" id="arrivalTime" placeholder="Preferred arrival time">
                     </div>
-                    <button class="btn btn-primary btn-lg">Purchase</button>
+                    <button class="btn btn-ourchase">Purchase</button>
                 </div>
             </div>
         </div>
@@ -88,12 +97,12 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
             <a href="#"><i class="fab fa-discord"></i></a>
             <ul class="list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Browse Items</a></li>
+                <li><a href="MainPage.html">Home</a></li>
+                <li><a href="SearchPage.html">Browse Items</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-            <p class="copyright">&copy; Cozy Shark 2024</p>
+            <p class="copyright" style="font-size: x-small; opacity: 0.5; color: #FDFFE2;">Cozy Shark @ 2024</p>
         </div>
     </footer>
 </body>
